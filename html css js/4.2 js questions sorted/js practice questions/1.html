@@ -1,0 +1,41 @@
+<!-- Q1: Change Paragraph Text -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 - Change Paragraph Text</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p>hello unchanged</p>
+    <button id="btn">click</button>
+
+    <script>
+        var btn = document.querySelector('#btn');
+        var par = document.querySelector('p');
+
+        btn.addEventListener('click', function() {
+            par.textContent = 'paragraph changed';
+        });
+    </script>
+</body>
+</html>

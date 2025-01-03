@@ -1,0 +1,71 @@
+<!-- Question 4 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        input {
+            margin: 10px 0;
+            padding: 5px;
+        }
+
+        button {
+            margin-right: 5px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Dynamic List</h2>
+    <ul id="list">
+        <li>apple</li>
+        <li>mango</li>
+        <li>orange</li>
+    </ul>
+    <input id="input" type="text" placeholder="Add new item">
+    <button id="add">Add</button>
+    <button id="remove">Remove</button>
+
+    <script>
+        const add = document.querySelector("#add");
+        const remove = document.querySelector("#remove");
+        const ul = document.querySelector("#list");
+        const input = document.querySelector("#input");
+
+        add.addEventListener("click", function () {
+            if (input.value.trim() !== '') {
+                const li = document.createElement("li");
+                li.textContent = input.value;
+                ul.appendChild(li);
+                input.value = '';
+            }
+        });
+
+        remove.addEventListener("click", function () {
+            const li = ul.lastElementChild;
+            if (li) {
+                ul.removeChild(li);
+            }
+        });
+    </script>
+</body>
+
+</html>

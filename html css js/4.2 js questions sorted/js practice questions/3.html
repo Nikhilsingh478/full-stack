@@ -1,0 +1,67 @@
+<!-- Q3: Form Validation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 - Form Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        #error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h4 id="error"></h4>
+    <form>
+        <input type="text" id="text" placeholder="enter name">
+        <input type="text" id="text1" placeholder="enter surname">
+        <input type="text" id="text2" placeholder="enter middleName">
+        <input type="submit" id="btn" value="Submit">
+    </form>
+
+    <script>
+        var form = document.querySelector("form");
+        var inputs = document.querySelectorAll("input[type='text']");
+        var h4 = document.querySelector("#error");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            var isEmpty = false;
+            inputs.forEach(function(input) {
+                if (input.value.trim() === "") {
+                    isEmpty = true;
+                }
+            });
+            if (isEmpty) {
+                h4.textContent = "Some fields are empty!";
+                h4.style.color = "red";
+            } else {
+                h4.textContent = "Form submitted successfully!";
+                h4.style.color = "green";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!-- Question 8 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        #main {
+            height: 100%;
+            width: 100%;
+        }
+
+        .container {
+            padding: 10vw 25vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px 20px;
+            font-weight: 400;
+            font-size: 24px;
+            border-radius: 10px;
+            border: 4px solid rgba(33, 18, 11, 0.315);
+            outline-color: royalblue;
+        }
+
+        .img {
+            border-radius: 50%;
+            border: 2px solid lightslategray;
+            height: 10vw;
+            width: 10vw;
+            background-color: aquamarine;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .people {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+            font-size: 19px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .person {
+            padding: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="container">
+            <input type="text" placeholder="Search">
+            <div class="people"></div>
+        </div>
+    </div>
+
+    <script>
+        const input = document.querySelector('input');
+        const data = [
+            { name: "shraddha", src: "https://i.pinimg.com/736x/8a/74/42/8a744228d440dd38d29d66a1399b1714.jpg" },
+            { name: "warina", src: "https://i.pinimg.com/736x/4b/28/51/4b2851e71d5433066d7c421b54e5d284.jpg" },
+            { name: "tanya", src: "https://i.pinimg.com/736x/36/bd/d7/36bdd73526de795c5cc4e5e84b470b2f.jpg" },
+            { name: "deepika", src: "https://i.pinimg.com/736x/72/15/50/7215505d0b071145703ccf4135be0d07.jpg" }
+        ];
+
+        let person = '';
+
+        data.forEach(function (elem) {
+            person += `<div class="person">
+                            <img src="${elem.src}" alt="" class="img">
+                            <h4>${elem.name}</h4>
+                        </div>`;
+        });
+
+        document.querySelector(".people").innerHTML = person;
+
+        input.addEventListener('input', function () {
+            const matching = data.filter(function (e) {
+                return e.name.toLowerCase().startsWith(input.value.toLowerCase());
+            });
+
+            let newUsers = '';
+            matching.forEach(function (elem) {
+                newUsers += `<div class="person">
+                                <img src="${elem.src}" alt="" class="img">
+                                <h4>${elem.name}</h4>
+                            </div>`;
+            });
+
+            document.querySelector(".people").innerHTML = newUsers;
+        });
+    </script>
+</body>
+
+</html>

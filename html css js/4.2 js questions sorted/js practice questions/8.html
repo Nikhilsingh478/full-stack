@@ -1,0 +1,46 @@
+<!-- Question 9 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+        textarea {
+            width: 400px;
+            height: 140px;
+            font-size: 20px;
+            font-weight: 500;
+            border: 1px solid lightpink;
+            resize: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>character count: <span></span></h3>
+    <textarea></textarea>
+
+    <script>
+        // Q9. build a character counter for a text area or input field, which updates in real
+        // time user types and enforces a character limit 
+
+
+        var input = document.querySelector('textarea');
+        var span = document.querySelector('span');
+
+        var count = 0;
+        input.addEventListener('input', function () {
+            count = input.value.length;
+            span.textContent = count;
+        })
+    </script>
+</body>
+
+</html>

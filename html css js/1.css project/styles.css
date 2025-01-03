@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: "Prompt", serif;
+    background-color: #d5ff40;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    /* background-color: crimson; */
+    padding: 30px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .navright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+nav .navright a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+nav h2{
+    font-weight: 600;
+}
+
+section{
+    padding:40px 80px;
+}
+
+.hero-text1{
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.hero-text1 h1{
+    font-size: 200px;
+    text-transform: uppercase;
+    line-height: 200px;
+    font-weight: 800;
+}
+
+.hero-text1 .video{
+    height: 100px;
+    width: 400px;
+    background-color: black;
+    border-radius: 50px;
+    margin-top: 25px;
+    background-image: url(https://images.news18.com/ibnlive/uploads/2024/11/shraddha-kapoor-2024-11-d03e48c2ab776772b82a24283c97763c-3x2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px;
+}
+
+.hero-text2 h1{
+    font-size: 200px;
+    text-transform: uppercase;
+    line-height: 200px;
+    font-weight: 800;
+}
+
+.hero-text2{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.hero-text2 p{
+    font-size: 20px;
+    font-weight: 200;
+    width: 500px;
+    margin: 30px;
+}
+
+.play{
+    /* margin: 20px; */
+    /* height: 70px; */
+    height: 100%;
+    width: 90px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ri-play-fill{
+    font-size: 35px;
+    color: white;
+}
+
+.image{
+    margin: 30px 5%;
+    height: 600px;
+    width: 90%; 
+    background-image: url(https://media.assettype.com/freepressjournal/2024-10-14/l91tkd3f/Snapinsta.app454725563970926751384724749267660446972739n1080.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+}
+
+.arrow{
+    height: 70px;
+    width: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -3%;
+    right: 5%;
+}
+
+.arrow i{
+    color: white;
+    font-size: 30px;
+}
+
+.but{
+    display: flex;
+    gap: 30px;
+}
+
+.but1,.but2{
+    height: 50px;
+    width: 250px;
+    border-radius: 50px;
+    border: 1px solid black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

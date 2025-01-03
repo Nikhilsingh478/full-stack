@@ -1,0 +1,56 @@
+<!-- Q2: Swap Image Sources -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 - Swap Image Sources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        img {
+            height: 200px;
+            margin: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id="img1" src="https://i.pinimg.com/736x/1f/d9/3f/1fd93f35e25e97b6ad619e9eafe8af82.jpg" alt="">
+        <img id="img2" src="https://i.pinimg.com/736x/6d/7f/67/6d7f676a9c7f6a65d91a2108b2ca95da.jpg" alt="">
+    </div>
+    <button id="btn">click</button>
+
+    <script>
+        var btn = document.querySelector('#btn');
+        var img1 = document.querySelector('#img1');
+        var img2 = document.querySelector('#img2');
+
+        btn.addEventListener('click', function () {
+            var temp = img1.src;
+            img1.src = img2.src;
+            img2.src = temp;
+        });
+    </script>
+</body>
+
+</html>

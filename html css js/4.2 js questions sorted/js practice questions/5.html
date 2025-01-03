@@ -1,0 +1,51 @@
+
+<!-- Question 5 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        h3 {
+            font-size: 24px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 id="timer">0</h3>
+    <button class="btn" id="start">Start</button>
+    <button class="btn" id="stop">Stop</button>
+
+    <script>
+        const startBtn = document.querySelector('#start');
+        const stopBtn = document.querySelector('#stop');
+        const timerDisplay = document.querySelector('#timer');
+        let interval;
+
+        startBtn.addEventListener('click', function () {
+            let count = 0;
+            interval = setInterval(function () {
+                timerDisplay.textContent = count;
+                count++;
+            }, 1000);
+        });
+
+        stopBtn.addEventListener('click', function () {
+            clearInterval(interval);
+        });
+    </script>
+</body>
+
+</html>

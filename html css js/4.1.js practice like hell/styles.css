@@ -1,0 +1,154 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+} */
+
+body {
+    background-color: black;
+    color: white;
+    height: 4000px;
+}
+
+/* Q2---------- */
+/* #img1{
+    height: 400px;
+    width: 200px;
+}
+
+#img2{
+    height: 400px;
+    width: 200px;
+} */
+
+
+
+
+
+/* Q3---------- */
+/* h5{
+    color: aliceblue;
+} */
+
+
+/* Q7---------- */
+/* #downloadcapsule{
+    border-radius: 100px;
+    width: 300px;
+    height: 20px;
+    background-color: lavenderblush;
+}
+
+#progress{
+    border-radius: 100px;
+    width: 10%;
+    height: 100%;
+    background-color: aqua;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+}
+
+#center{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h4{
+    opacity: 0;
+} */
+
+
+
+
+
+/* Q8----------- */
+/* 
+#main {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    padding: 10vw 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 24px;
+    border-radius: 10px;
+    border: 4px solid rgba(33, 18, 11, 0.315);
+    outline-color: royalblue;
+}
+
+.img{
+    border-radius: 50%;
+    border: 2px solid lightslategray;
+    height: 10vw;
+    width: 10vw;
+    background-color: aquamarine;
+    object-fit: cover;
+    object-position: top;
+}
+
+.people{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    font-size: 19px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.person{
+    padding: 24px;
+} */
+
+
+
+
+/* Q9. ------------- */
+/* textarea{
+    width: 400px;
+    height: 140px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid lightpink;
+    resize: none;
+    padding:10px ;
+} */
+
+
+
+
+
+
+/* Q10. ----------------- */
+#capsule {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #e0e0e0;
+  }
+  #progress {
+    height: 100%;
+    background: #007bff;
+    width: 0; /* Initially no progress */
+  }
