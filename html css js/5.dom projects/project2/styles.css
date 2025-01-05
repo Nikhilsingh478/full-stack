@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(224, 135, 135);
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card {
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.card i {
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    transition: all ease-in 0.3s;
+}
+
+i.ri-heart-fill {
+    background: linear-gradient(45deg, #FF0000, #FF69B4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
