@@ -32,7 +32,7 @@ return true;
 <!-- destructuring
   -jab koi detailed object ho hamare pass aur hame wo object me kisi object ki property
    access karni ho tab ham destructuring ka use karte hai 
-  - agar koi normal property ko access karna hai to {} use karna aur agar array hoga
+  - agar koi object ki property ko access karna hai to {} use karna aur agar array hoga
    to [] use karna hai 
   - aur agar kisi array me koi index ka element choddna ho to [_,_] use karna hai-->
 
